@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F68557932696F9F7006BE18F /* XStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68557902696F9F7006BE18F /* XStackView.m */; };
+		F68557942696F9F7006BE18F /* XStackViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F68557912696F9F7006BE18F /* XStackViewCell.m */; };
 		F6A285F0232A4A78008C01DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A285EF232A4A78008C01DB /* AppDelegate.m */; };
 		F6A285F3232A4A78008C01DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A285F2232A4A78008C01DB /* ViewController.m */; };
 		F6A285F6232A4A78008C01DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A285F4232A4A78008C01DB /* Main.storyboard */; };
@@ -15,8 +17,6 @@
 		F6A285FE232A4A79008C01DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A285FD232A4A79008C01DB /* main.m */; };
 		F6A28608232A4A79008C01DB /* XStackViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A28607232A4A79008C01DB /* XStackViewTests.m */; };
 		F6A28613232A4A79008C01DB /* XStackViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A28612232A4A79008C01DB /* XStackViewUITests.m */; };
-		F6A28625232A4AC7008C01DB /* XStackViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A28622232A4AC7008C01DB /* XStackViewCell.m */; };
-		F6A28626232A4AC7008C01DB /* XStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A28623232A4AC7008C01DB /* XStackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F685578F2696F9F7006BE18F /* XStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStackView.h; sourceTree = "<group>"; };
+		F68557902696F9F7006BE18F /* XStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XStackView.m; sourceTree = "<group>"; };
+		F68557912696F9F7006BE18F /* XStackViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XStackViewCell.m; sourceTree = "<group>"; };
+		F68557922696F9F7006BE18F /* XStackViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStackViewCell.h; sourceTree = "<group>"; };
 		F6A285EB232A4A78008C01DB /* XStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A285EE232A4A78008C01DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6A285EF232A4A78008C01DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,10 +57,6 @@
 		F6A2860E232A4A79008C01DB /* XStackViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XStackViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A28612232A4A79008C01DB /* XStackViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XStackViewUITests.m; sourceTree = "<group>"; };
 		F6A28614232A4A79008C01DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6A28621232A4AC7008C01DB /* XStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStackView.h; sourceTree = "<group>"; };
-		F6A28622232A4AC7008C01DB /* XStackViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XStackViewCell.m; sourceTree = "<group>"; };
-		F6A28623232A4AC7008C01DB /* XStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XStackView.m; sourceTree = "<group>"; };
-		F6A28624232A4AC7008C01DB /* XStackViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XStackViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +142,10 @@
 		F6A28620232A4AC7008C01DB /* XStackView */ = {
 			isa = PBXGroup;
 			children = (
-				F6A28621232A4AC7008C01DB /* XStackView.h */,
-				F6A28622232A4AC7008C01DB /* XStackViewCell.m */,
-				F6A28623232A4AC7008C01DB /* XStackView.m */,
-				F6A28624232A4AC7008C01DB /* XStackViewCell.h */,
+				F685578F2696F9F7006BE18F /* XStackView.h */,
+				F68557902696F9F7006BE18F /* XStackView.m */,
+				F68557922696F9F7006BE18F /* XStackViewCell.h */,
+				F68557912696F9F7006BE18F /* XStackViewCell.m */,
 			);
 			path = XStackView;
 			sourceTree = "<group>";
@@ -280,8 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A28625232A4AC7008C01DB /* XStackViewCell.m in Sources */,
-				F6A28626232A4AC7008C01DB /* XStackView.m in Sources */,
+				F68557942696F9F7006BE18F /* XStackViewCell.m in Sources */,
+				F68557932696F9F7006BE18F /* XStackView.m in Sources */,
 				F6A285F3232A4A78008C01DB /* ViewController.m in Sources */,
 				F6A285FE232A4A79008C01DB /* main.m in Sources */,
 				F6A285F0232A4A78008C01DB /* AppDelegate.m in Sources */,
